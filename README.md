@@ -169,4 +169,54 @@ A byte object can be identfied by a 'b' in front of it.
 
 Bytes objects are immutable, like tuples, but you can use a byte array if you need to modify the data.
 
-              
+# Control Flow
+Flow control is the order in which statements or blocks of code are executed at runtime based on a condition.
+### There are three categories of flow control statements: 
+        1. Conditional statements - act depending on whether a given condition is true or false (if, if-else, if-elif-else, nested if-else & switch)
+        2. Transfer statements - are used to alter the program’s way of execution in a certain manner (break, continue & pass)
+        3. Iterative statements / Loops - iterative statements allow us to execute a block of code repeatedly as long as the condition is True (for & while)
+
+### If statement
+It takes a condition and evaluates to either True or False.
+If the condition is True, then the True block of code will be executed, and if the condition is False, then the block of code is skipped, and The controller moves to the next line.
+
+        Example: number = 6
+                 if number > 5:
+                     print(number * number)
+                 print('This is an if statement')
+
+### If-else
+The if-else statement checks the condition and executes the if block of code when the condition is True, and if the condition is False, it will execute the else block of code.
+
+        Example: password = input('Enter password ')
+
+                 if password == "Password@1":
+                      print("Correct password")
+                 else:
+                      print("Incorrect Password")
+
+       output 1: Enter password (user inputs "PASSWORD")
+                 Incorrect Password
+       output 2: Enter password (user inputs "Password@1")
+                 Correct Password
+
+### If-elif-else
+The elif statement checks multiple conditions one by one and if the condition fulfills, then executes that code.
+
+        Example: def user_check(choice):
+                        if choice == 1:
+                            print("Admin")
+                        elif choice == 2:
+                            print("Editor")
+                        elif choice == 3:
+                            print("Guest")
+                        else:
+                            print("Wrong entry")
+                    
+                    user_check(1)
+                    user_check(2)
+                    user_check(3)
+                    user_check(4)
+                            
+                  
+                                
