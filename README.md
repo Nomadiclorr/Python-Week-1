@@ -54,6 +54,68 @@ Types include:
                Exampes - in
                        - not in
 
+# Data structrures
+## Lists
+### List slicing
+Uses the same syntax as the strings slicing
+Slicing can be used to extract a range of values from a list or string, and you can also add a third value to control the step size.
+
+              Example: myList = [1, 2, 3, 4, 5]
+              myList[start:stop:step]
+              myList[0:5:2]
+              output: 1 3 5
+              
+### Add item to list
+To add an item to the end of a list, we can use the append() method.
+
+              Example: thislist = ["apple", "banana", "cherry"]
+              thislist.append("orange")
+              print(thislist)
+              output: apple banana cherry orange
+
+If we want to insert an item at a specific position in the list, we can use the insert() method. 
+
+              Example: thislist = [1, 3, 4, 5]
+              thislist.insert(1, 2)
+              print(thislist)
+              output: 1 2 3 4 5
+
+### Remove item from list
+There are two ways to remove items from a list. 
+The first method is called remove(), which removes an item based on its value, not its index. 
+
+              Example: thislist = [1, 2, 3, 4, 5]
+              thislist.remove(1)
+              print(thislist)
+              output: 2 3 4 5
+
+The second method to remove items from a list is pop(). This method removes and returns the item at the end of the list. For example, if we type myList.pop() and then print myList, the last item will be removed from myList.
+
+             Example: myList = [1, 2, 3, 4, 5]
+             myList.pop()
+             print(myList)
+             output: 1, 2, 3, 4
+
+# Sets
+A set is defined using curly brackets.
+
+             Example: mySet = {'a', 'b', 'c'}
+
+Sets only contain unique values.
+You can convert a list to a set by using the set() function like so: *mySet = list(set(mylist))*
+You can also check if an element is in a set using the membership operator (in)
+You can add elements to a set by using the add() function and discard() to remove elements.
+
+# Tuples
+They're similar to lists but are declared with parentheses instead of square brackets.
+They are immutable, meaning you can't modify them.
+You can retrieve elements from a tuple using indexing.
+
+
+
+
+
+
 # Control flow:
 Types - The if statement(allows you to execute a block of code only if a certain condition is met)
       - For loop(used to iterate over a list or any iterable object eg for item in my_list: print item)
