@@ -96,7 +96,7 @@ The second method to remove items from a list is pop(). This method removes and 
              print(myList)
              output: 1, 2, 3, 4
 
-# Sets
+## Sets
 A set is defined using curly brackets.
 
              Example: mySet = {'a', 'b', 'c'}
@@ -106,14 +106,108 @@ You can convert a list to a set by using the set() function like so: *mySet = li
 You can also check if an element is in a set using the membership operator (in)
 You can add elements to a set by using the add() function and discard() to remove elements.
 
-# Tuples
+## Tuples
 They're similar to lists but are declared with parentheses instead of square brackets.
 They are immutable, meaning you can't modify them.
 You can retrieve elements from a tuple using indexing.
 
+## Dictionaries
+Dictionaries are used to store data values in key:value pairs.
+A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+Dictionaries are written with curly brackets, and have keys and values.
+The values in dictionary items can be of any data type
 
+              Example: thisdict = {
+              "brand": "Ford",
+              "model": "Mustang",
+              "year": 1964
+              }
+              print(thisdict)
 
+You can use the dict() constructor to make a dictionary.
 
+              Example: thisdict = dict(name = "John", age = 36, country = "Norway")
+              print(thisdict)
+
+### Accessing items
+You can access the items of a dictionary by referring to its key name, inside square brackets or by using the get() function.
+
+              Example: thisdict = {
+              "brand": "Ford",
+              "model": "Mustang",
+              "year": 1964
+              }
+              x = thisdict["model"]
+              or 
+              x = thisdict.get("model")
+
+The keys() method will return a list of all the keys in the dictionary. *x = thisdict.keys()*
+The values() method will return a list of all the values in the dictionary. *x = thisdict.values()*
+The items() method will return each item in a dictionary, as tuples in a list. *x = thisdict.items()*
+To determine if a specified key is present in a dictionary use the "in" keyword.
+
+              Example: thisdict = {
+              "brand": "Ford",
+              "model": "Mustang",
+              "year": 1964
+              }
+              if "model" in thisdict:
+              print("Yes, 'model' is one of the keys in the thisdict dictionary")
+
+### Modifying items
+You can change the value of a specific item by referring to its key name.
+
+              Example: thisdict = {
+              "brand": "Ford",
+              "model": "Mustang",
+              "year": 1964
+              }
+              thisdict["year"] = 2018
+
+The update() method will update the dictionary with the items from the given argument.
+
+              Example: thisdict = {
+              "brand": "Ford",
+              "model": "Mustang",
+              "year": 1964
+              }
+              thisdict.update({"year": 2020})
+
+Adding an item to the dictionary is done by using a new index key and assigning a value to it.
+
+              Example:  thisdict = {
+              "brand": "Ford",
+              "model": "Mustang",
+              "year": 1964
+              }
+              thisdict["color"] = "red"
+              print(thisdict)
+
+The pop() method removes the item with the specified key name.
+
+              Example: thisdict = {
+              "brand": "Ford",
+              "model": "Mustang",
+              "year": 1964
+              }
+              thisdict.pop("model")
+              print(thisdict)
+
+The popitem() method removes the last inserted item. *thisdict.popitem()*
+The del keyword removes the item with the specified key name and can delete the whole dictionary. *del thisdict["model"]*
+The clear() method empties the dictionary. *thisdict.clear()*
+
+## List comprehensions
+A list comprehension allows you to create a for loop in one line while also returning a copy of the list you're iterating over. It also enables you to filter or apply functions to every item in a list.
+
+              Example: fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+              newlist = [x for x in fruits if "a" in x]
+
+              print(newlist)
+
+## Dictionaries and comprehensions
+You can use dictionary comprehensions to create a new dictionary from an iterable structure.
 
 
 # Control flow:
@@ -279,6 +373,81 @@ The elif statement checks multiple conditions one by one and if the condition fu
                     user_check(2)
                     user_check(3)
                     user_check(4)
-                            
+        output: Admin
+                Editor
+                Guest
+                Wrong entry 
+
+### Nested if-else statement
+The nested if-else statement is an if statement inside another if-else statement.
+
+          Example: num1 = int(input('Enter first number '))
+                  num2 = int(input('Enter second number '))
+                  
+                  if num1 >= num2:
+                      if num1 == num2:
+                          print(num1, 'and', num2, 'are equal')
+                      else:
+                          print(num1, 'is greater than', num2)
+                  else:
+                      print(num1, 'is smaller than', num2)
+
+### While statement
+The while loop statement repeatedly executes a code block while a particular condition is true.
+
+          Example: count = 1
+           *condition: Run loop till count is less than 3*
+                   while count < 3:
+                      print(count)
+                      count = count + 1
+                      
+You can use the break statement to exit a loop and move on to the next line of code outside of the loop. 
+You can use the continue statement to skip over any lines that come after it and jump back to the top of the loop to start the next iteration.
+
+### For loop
+The for loop is used to iterate over a sequence such as a list, string, tuple, other iterable objects such as range for a "fixed" number of times.
+You can declare a new variable, like "item," to hold the value of each element in your list as you iterate through it.
+Pass can be used to write a stub for a for loop, continue can be used to skip the rest of a loop during a specific iteration, and break can be used to stop the loop early if you've found what you're looking for. 
+
+          Example: numbers = [10, 20, 30, 40, 50]
+                  # definite iteration
+                  # run loop 5 times because list contains 5 items
+                  sum = 0
+                  for i in numbers:
+                      sum = sum + i
+                  list_size = len(numbers)
+                  average = sum / list_size
+                  print(average)
+
+### Break statement
+The break statement is used to terminate the loop.
+
+          Example: Example: break the loop if number a number is greater than 15
+                   In this program, for loop iterates over each number from a list.
+                   Next, the if statement checks if the current is greater than 15. If yes, then break the loop else print the current number.
+                   numbers = [1, 4, 7, 8, 15, 20, 35, 45, 55]
+                   for i in numbers:
+                        if i > 15:
+                            # break the loop
+                            break
+                        else:
+                            print(i)
+
+### Continue statement
+The continue statement skips the current iteration of a loop and immediately jumps to the next iteration.
+
+          Example: Count the total number of ‘m’ in a given string.
+          name = "mariya mennen"
+          count = 0
+          for char in name:
+              if char != 'm':
+                  continue
+              else:
+                  count = count + 1
+          
+          print('Total number of m is:', count)
+          
+
+                                              
                   
                                 
