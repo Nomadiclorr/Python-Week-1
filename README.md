@@ -446,8 +446,33 @@ The continue statement skips the current iteration of a loop and immediately jum
                   count = count + 1
           
           print('Total number of m is:', count)
-          
 
-                                              
+
+# Week 1
+# Anatomy of a function
+Functions are composed of a name and parameters, which are denoted by the *def* statement.
+
+          Example: def performOperation (num1, num2, operation):
+                        if operation == 'sum':
+                            return num1 + num2
+                        if operation == 'multiplication':
+                            return num1 * num2
+                   performOperation(2, 3, 'sum')
+          output: 5
+
+## locals()
+These are the variable names that are only accessible locally within the function.
+Referencing a variable outside its scope will result in an error. 
+
+          Example: def performOperation(num1, num2, operation = 'sum'):
+                        print(locals())
+                  performOperation(2,3, operation = 'multiply')
+          output: {'num1': 2, 'num2': 3, 'operation': 'multiply'}
+
+## globals()
+
+
+                    
+                                                                  
                   
                                 
