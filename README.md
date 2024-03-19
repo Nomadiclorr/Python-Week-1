@@ -502,6 +502,10 @@ Variables and functions both have names and data associated with them.
                         return 5  
 
 ## Lamda functions
+These are a way to represent a function without giving it a variable name.
+For example, lambda x: x + 3 is a lambda function that takes a single parameter x and returns x plus three.
+Lambda functions can come in handy when you need to pass a function as an argument to another Python function.
+
 
 
 
