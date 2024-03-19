@@ -470,6 +470,10 @@ Referencing a variable outside its scope will result in an error.
           output: {'num1': 2, 'num2': 3, 'operation': 'multiply'}
 
 ## globals()
+Variables defined outside of any function or class are considered global variables.
+These variables are accessible throughout the entire program, both inside and outside functions.
+
+
 
 
                     
