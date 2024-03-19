@@ -473,6 +473,27 @@ Referencing a variable outside its scope will result in an error.
 Variables defined outside of any function or class are considered global variables.
 These variables are accessible throughout the entire program, both inside and outside functions.
 
+          Example: message = "some global data"
+                   varA = 2
+                   def function1(varA, varB):
+                        message = "some local data"
+                        print(varA)
+                        print(message)
+                        print(locals())
+                        
+                   def function2(varC, varD):
+                        print(varA)
+                        print(message)
+                        print(locals())
+                    
+                   function1(1, 2)
+                   function2(3, 4)
+          output: 1
+                  some local data
+                  {'varA': 1, 'varB': 2, 'message': 'some local data'}
+                  2
+                  some global data
+                  {'varC': 3, 'varD': 4}
 
 
 
