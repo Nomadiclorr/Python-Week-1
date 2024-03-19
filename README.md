@@ -495,6 +495,14 @@ These variables are accessible throughout the entire program, both inside and ou
                   some global data
                   {'varC': 3, 'varD': 4}
 
+## Functions as variables
+Variables and functions both have names and data associated with them.
+
+          Example: def x(): *x is a function as a variable. It is the same as x = 5*
+                        return 5  
+
+## Lamda functions
+
 
 
                     
