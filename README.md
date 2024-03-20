@@ -550,6 +550,35 @@ Use the __init__() function to assign values to object properties, or other oper
          output: Milo
                  4
 
+Static variables can still be modified, to prevent this an underscore is added before the variable name.
+
+# Instance and static methods
+By adding the @staticmethod decorator to the function definition, it explicitly states in Python that the function is a static method and should not have "self" passed in as an argument. 
+This allows us to use the function without creating an instance of the class. 
+
+# Inheritance
+## Class inheritance
+Inheritance allows us to define a class that inherits all the methods and properties from another class.
+Parent class is the class being inherited from, also called base class.
+Child class is the class that inherits from another class, also called derived class.
+
+          Example:  class Chihuaha(Dog):
+                        def speak(self):
+                            print (f'{self.name} says: Yap, Yap!')
+                        def wagTail(self):
+                            print("wags vigorously.")
+                    
+                    dog = Chihuaha("Mel")
+                    dog.speak()
+                    dog.wagTail()
+                    myDog.speak()
+         output: Mel says: Yap, Yap!
+                 wags vigorously.
+                 Milo says bark!!
+
+If the child class defines an attribute or method that is the same as the parent class, the child's version will overwrite the parent's version. 
+
+
                  
 
 
