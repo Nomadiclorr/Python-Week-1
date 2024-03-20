@@ -510,6 +510,14 @@ Lambda functions can come in handy when you need to pass a function as an argume
 # Anatomy of a class
 ## Instance attributes
 A Class is like an object constructor, or a "blueprint" for creating objects.
+To create a class, use the keyword *class* and give the class a *ClassName*.
+To creat class objects you use the *ClassName* by assigning the object to the *ClassName*.
+
+          Example: class MyClass: #creating class
+                        x = 5 #define class property
+                    
+                    p1 = MyClass() #create class object
+                    print(p1.x) 
 
 
 
