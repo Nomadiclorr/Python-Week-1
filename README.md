@@ -448,7 +448,7 @@ The continue statement skips the current iteration of a loop and immediately jum
           print('Total number of m is:', count)
 
 
-# Week 1
+# Week 2
 # Anatomy of a function
 Functions are composed of a name and parameters, which are denoted by the *def* statement.
 
@@ -506,6 +506,10 @@ These are a way to represent a function without giving it a variable name.
 For example, lambda x: x + 3 is a lambda function that takes a single parameter x and returns x plus three.
 Lambda functions can come in handy when you need to pass a function as an argument to another Python function.
 
+
+# Anatomy of a class
+## Instance attributes
+A Class is like an object constructor, or a "blueprint" for creating objects.
 
 
 
