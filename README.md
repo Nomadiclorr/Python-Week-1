@@ -519,6 +519,38 @@ To creat class objects you use the *ClassName* by assigning the object to the *C
                     p1 = MyClass() #create class object
                     print(p1.x) 
 
+All classes have a function called __init__(), which is always executed when the class is being initiated.
+Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created:
+
+          Example: class Person:
+                        def __init__(self, name, age):
+                          self.name = name
+                          self.age = age
+                      
+                        def myfunc(self):
+                          print("Hello my name is " + self.name)
+                      
+                      p1 = Person("John", 36)
+                      p1.myfunc()
+
+## Static attributes
+"Static" variables don't change with each instance and are commonly used to hold constants or fundamental business logic. 
+
+          Example: class Dog:
+                      legs = 4 *-static variable*
+                      def __init__(self, name):
+                          self.name = name
+                          
+                      def speak(self):
+                          print(self.name + " says bark!!")
+                  
+                  myDog = Dog("Milo")
+                  print(myDog.name)
+                  print(myDog.legs)
+         output: Milo
+                 4
+
+                 
 
 
                     
