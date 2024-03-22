@@ -578,6 +578,63 @@ Child class is the class that inherits from another class, also called derived c
 
 If the child class defines an attribute or method that is the same as the parent class, the child's version will overwrite the parent's version. 
 
+# Handling errors and exceptions
+Exceptions are determined during runtime and can be retried, whereas errors cannot be retried.
+Exceptions interrupt the flow of the program and can be resolved by running the exception clause in the try-except statement.
+Errors orevent the progrma from completing its designated task.
+The base exception class(which exceptions & errors stem from) provides useful and powerful properties to exceptions, such as halting code execution and providing information about why and how the execution was halted. 
+We can catch an exception using a try / except statement and obtain an instance of the raised exception.
+
+The try block lets you test a block of code for errors.
+The except block lets you handle the error.
+The else block lets you execute code when there is no error.
+The finally block lets you execute code, regardless of the result of the try- and except blocks.
+
+## Try/Except/Finally
+Finally statements can be useful because they will always execute no matter what happens inside this try block.
+
+          Example: def causeError():
+                        try:
+                            return 1/0
+                        except Exception:
+                            print("There is an error.")
+                        finally:
+                            print("This will always execute.")
+
+                   causeError()
+
+## Catching exceptions by type
+
+          Example:  def causeError():
+                        try:
+                           return 1 + "a"
+                        except TypeError:
+                           print("There was a type error.")
+                        except zeroDivisionError:
+                           print("There was a zero division.")
+                        except Exception:
+                           print("There was some sort of error.")
+                    causeError()
+          output: There was a type error.
+
+## Raising exceptions
+You can choose to throw an exception if a condition occurs.
+To throw (or raise) an exception, use the *raise* keyword.
+
+          Example: @handleExceptio *~ custom decorator*
+                   def raiseError(n):
+                       if n == 0;
+                         raise Exception()
+                       print(n)
+                   raiseError(1)
+          output: 1
+                       
+                       
+                    
+
+
+
+
 
                  
 
