@@ -628,6 +628,10 @@ To throw (or raise) an exception, use the *raise* keyword.
                        print(n)
                    raiseError(1)
           output: 1
+
+# Fundamentals of threads and processes
+
+# Opening, reading, writing
                        
                        
                     
