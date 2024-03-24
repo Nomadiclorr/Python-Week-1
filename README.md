@@ -680,6 +680,8 @@ To delete an entire folder, use the os.rmdir() method.
           Examples: import os
                     os.rmdir("myfolder")
 
+
+# Week 3
                    
                        
                     
