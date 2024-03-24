@@ -632,7 +632,55 @@ To throw (or raise) an exception, use the *raise* keyword.
 # Fundamentals of threads and processes
 
 # Opening, reading, writing
-                       
+
+## Reading
+To open the file, use the built-in open() function.
+The open() function returns a file object, which has a read() method for reading the content of the file.
+
+          Example: f = open("demofile.txt", "r")
+                       print(f.read())
+
+If the file is located in a different location, you will have to specify the file path.
+There are different methods one can use to manipulate files, for examples:
+                       read() *~ can be used to read only a specific number of characters eg read(5)*
+                       readline() *~ you can return one line or loop between lines within the file*
+                       close() *~used to close a file*
+
+## Writing
+Openinga  file is similar as above except instead of an R, use a W for write.
+To write to an existing file, you must add a parameter to the open() function:
+                        "a" - Append - will append to the end of the file
+                        "w" - Write - will overwrite any existing content
+
+                        
+          Example: f = open("demofile2.txt", "a")
+                   f.write("Now the file has more content!")
+                   f.close()
+
+                   f = open("demofile3.txt", "w")
+                   f.write("Woops! I have deleted the content!")
+                   f.close()
+
+To create a new file in Python, use the open() method, with one of the following parameters:
+"x" - Create - will create a file, returns an error if the file exist
+"a" - Append - will create a file if the specified file does not exist
+"w" - Write - will create a file if the specified file does not exist
+
+
+To delete a file, you must import the OS module, and run its os.remove() function.
+
+          Example: import os
+                   if os.path.exists("demofile.txt"): *~checking if file exists*
+                      os.remove("demofile.txt")
+                   else:
+                      print("The file does not exist")
+
+To delete an entire folder, use the os.rmdir() method.
+
+          Examples: import os
+                    os.rmdir("myfolder")
+
+                   
                        
                     
 
