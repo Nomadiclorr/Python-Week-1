@@ -1,7 +1,6 @@
 # Week 1
 
-
-# Intro:
+# Introduction to python
 Started the week with a brief explanation of how computers store, retriev and diseminate data as far as storage or computer memory is concerned.
 Jumped into an introduction to python, whcih involved downloading python, pip and jupyter notebook using the command prompt.
 I used the "import" command which is used to fetch a module you want to utilize, in this instance i fetched the "this" module.
@@ -449,6 +448,8 @@ The continue statement skips the current iteration of a loop and immediately jum
 
 
 # Week 2
+
+# Python fundamentals
 # Anatomy of a function
 Functions are composed of a name and parameters, which are denoted by the *def* statement.
 
@@ -680,8 +681,14 @@ To delete an entire folder, use the os.rmdir() method.
           Examples: import os
                     os.rmdir("myfolder")
 
+## CSV
+To work with CSV files in python you import the csv module at the top (import csv)
+
 
 # Week 3
+
+# Intermediate python
+
                    
                        
                     
