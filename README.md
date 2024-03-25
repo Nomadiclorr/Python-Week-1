@@ -684,11 +684,42 @@ To delete an entire folder, use the os.rmdir() method.
 ## CSV
 To work with CSV files in python you import the csv module at the top (import csv)
 
+## JSON
+JSON is a syntax for storing and exchanging data.
+JSON is text, written with JavaScript object notation.
+
+
 
 # Week 3
 
 # Intermediate python
+# Project planning
 
+## Finding inspiration
+As a programmer you can draw inspiration for new projects and ideas from things that interest you like your hobbies, you daily life routine and your workplace.
+
+## User stories(*user experience*)
+User stories depict small scenarios from a user's perspective, these stories should emphasize the user's goal and motivation rather than the application itself.
+They typically follow the format "As a [user/role], I want [goal] so that [reason/benefit]".
+Consider the needs of the administrator role. An admin might want to curate content, control the email's timing, and manage the recipient list.
+
+## Use cases(*user/system interaction*)
+Use cases typically include a title, an actor (a user or system), and a scenario that describes how a goal is achieved.
+User stories focus on the who, what, and why of a task or goal, while use cases cover the who, what, and how of achieving that goal. 
+
+## Project requirements(*capabilities & contraints*)
+Functional requirements describe what the application should or should not do and are written as sentences starting with "the application must" or "the application shall." 
+In addition to functional requirements, non-functional requirements describe how the application should accomplish its tasks. They focus on qualities like maintainability, reliability, and usability.
+
+## Architecture
+Architecture defines the organization and structure of the application's code.
+Looking at the requirements, use cases, and user stories, identifying nouns helps determine potential classes and verbs potential functions.
+
+## Stub code
+The stub code provides the structure for implementation, allowing for separate development of the different classes.
+
+
+# Content retrieval
                    
                        
                     
