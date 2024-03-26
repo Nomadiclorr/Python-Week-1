@@ -721,9 +721,37 @@ The stub code provides the structure for implementation, allowing for separate d
 
 # Content retrieval
 ## Daily inspirational quotes
+To implement the "get_random_quote" function, the source of random quotes needs to be determined. 
+You can curate a personal list of quotes and store them and their authors can be done using different file formats like CSV, JSON, or XML.
+The CSV format is chosen for simplicity, with each line containing the author and quote separated by a vertical pipe symbol.
+The file loading code is wrapped in a try-except block to handle potential exceptions. The CSV file is opened, and a list of dictionaries is created using list comprehension, where each dictionary represents an author and their quote. The CSV reader is instructed to use the vertical pipe symbol as the delimiter. 
+The random module's "choice" function is used to select a random quote from the list, which is then returned as a dictionary object. 
+
 ## Weather Forecasting with OpenWeatherMap
+Since the weather forecast data needs to be current, we can't store it in a local CSV file like we did for the quotes. We will need to fetch the weather information from the internet.
+We can use Python web-scraping library to extract forecast information from a website like weather.com or search the Python Package Index for a Python library that can retrieve weather data from an online source. Alternatively, we can find an online source of weather information that provides an API we can directly call from our program. In this case, we will use openweathermap.org as our online source.
+OpenWeatherMap offers various callable APIs for accessing current and forecast weather information. To use the service, you must register with OpenWeatherMap and obtain an API key.
+
 ## Trending social media content(Twitter)
+Twitter offers an API for developers to access this information.
+You can register a Twitter account, request API access, and obtain an API key or search a python library that could handle it.
+Tweepy is a popular, regularly updated, Python library and possesses the required capabilities.
+Its documentation revealed an API method called "trends_place," which retrieves current trends based on a location's unique identifier called WOEID (Where On Earth Identifier).
+To start using Tweepy, install it on your computer using the command "pip install tweepy." Then, in your code, import the Tweepy module and define a function called "get_twitter_trends" with an optional parameter for the WOEID value.
+
 ## Importing articles
+Wikipedia offers a REST API that allows access to their content.
+There are options available to obtain a random page title, the full page HTML, or a summary of key points.
+
+# Digest email
+## Writing and Formatting Email Messages
+There are multiple ways to format an email, including plaintext or HTML. Python's MIMEMultipart class allows us to include both formats in a single email message.
+
+## Sending an email
+Python has a convenient library called 'email' in its standard package, which helps manage email messages.
+
+
+
 
 
 
