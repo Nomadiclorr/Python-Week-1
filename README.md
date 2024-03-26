@@ -749,6 +749,25 @@ There are multiple ways to format an email, including plaintext or HTML. Python'
 
 ## Sending an email
 Python has a convenient library called 'email' in its standard package, which helps manage email messages.
+This package can assist in handling email messages, but it isn't meant for actually sending them.
+SMTP-Lib has the same functionality. This module lets you create a client session to send emails through an SMTP server but it's not recommended to run your own email server as it's a hassle.
+Many online email services offer an SMTP server that you can use with external email clients and various applications such as outlook as it requires only username & password to programmatically connect to the SMTP server.
+
+## Task scheduling
+If you want to schedule what time the email is sent, opt for a handy library called "schedule" that you can come across on the Python package index.
+You need to import schedule and time.
+
+
+# Building a graphical user
+## GUI design planning
+Leave the GUI development for last.
+Use the Tkinter module to create GUI in python.
+
+## Exploring Tkinter
+Tkinter is a powerful Python library you can import for creating graphical user interfaces (GUIs). It provides a straightforward way to build desktop applications with buttons, windows, text, images, and other interactive elements.
+
+# Design iteration
+
 
 
 
