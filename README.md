@@ -461,6 +461,11 @@ Functions are composed of a name and parameters, which are denoted by the *def* 
                    performOperation(2, 3, 'sum')
           output: 5
 
+There is a situation where we need to pass multiple arguments to the function. They are caled arbitrary/ value length arguments.
+Types of Arbitrary Arguments:
+      arbitrary positional arguments (*args)
+      arbitrary keyword arguments (**kwargs)
+
 ## locals()
 These are the variable names that are only accessible locally within the function.
 Referencing a variable outside its scope will result in an error. 
@@ -767,9 +772,14 @@ Use the Tkinter module to create GUI in python.
 Tkinter is a powerful Python library you can import for creating graphical user interfaces (GUIs). It provides a straightforward way to build desktop applications with buttons, windows, text, images, and other interactive elements.
 
 # Design iteration
+## Iterative enhancements
 
-
-
+# Project packaging
+## Distributing python projects
+PyInstaller can be used bundle a Python app and all its dependencies into a single package. 
+Once PyInstaller is installed, navigate to your project directory in the terminal. You can turn your app into an executable using the command "pyinstaller -w -F" followed by the top-level Python script (in this case, "dd_gui.py"). 
+The "-w" flag tells Windows and Mac OS not to show a console window when the program runs. This way, you will not get an extra console window along with the Tkinter GUI window you want. The "-F" flag tells PyInstaller to create a bundled executable in a single file, containing everything your program needs to run.
+After running PyInstaller, a "dist" folder is created in your project directory (if you are using Windows). Inside this folder, find the generated EXE file which you can share to whomever that wants to use the app.
 
 
 
