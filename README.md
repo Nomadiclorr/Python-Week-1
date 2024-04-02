@@ -795,6 +795,35 @@ Once PyInstaller is installed, navigate to your project directory in the termina
 The "-w" flag tells Windows and Mac OS not to show a console window when the program runs. This way, you will not get an extra console window along with the Tkinter GUI window you want. The "-F" flag tells PyInstaller to create a bundled executable in a single file, containing everything your program needs to run.
 After running PyInstaller, a "dist" folder is created in your project directory (if you are using Windows). Inside this folder, find the generated EXE file which you can share to whomever that wants to use the app.
 
+# Week 4
+
+Python is a highly sought-after programming language that's both accessible and in-demand.
+Python is known for its versatility and user-friendly nature, making it relatively easy to learn. 
+Python is a great language for beginners because it's designed to be easy to understand and read, with English-like syntax.
+Python is compatible with other programming languages. For example, you can integrate it with Java using Jython or with C using CPython. It also offers cross-platform functionality, so it works seamlessly on Windows, Linux, and macOS.
+
+## Value of certification
+Python Programming Certification holds significant value and serves as a formal recognition of one's proficiency and expertise in Python programming, providing several benefits. 
+A certification validates your skills and knowledge, enhancing your credibility and employability. 
+A certification can boost your confidence in your own abilities, allowing you to tackle complex programming tasks with ease. 
+
+## Certification pathways
+### Entry - PCEP™ – Certified Entry-Level Python Programmer (Exam PCEP-30-0x)
+PCEP evaluates your Python programming skills and knowledge of fundamental programming concepts, Python syntax and semantics, and your ability to tackle common coding challenges using the Python Standard Library.
+https://youtu.be/8qG463VRPjI
+https://pythoninstitute.org/pcep 
+
+### Associate - PCAP™ - Associate in Python Programming Certification (Exam PCAP-31-0x)
+PCAP assesses intermediate-level coding proficiency in Python. It evaluates the ability to design, develop, debug, execute, and refactor multi-module Python programs. It also measures skills in analyzing and modeling real-life problems using OOP concepts and techniques.
+https://youtu.be/U21d90zKgsg
+https://pythoninstitute.org/pcap
+
+### Professional - PCPP1™ – Certified Professional in Python Programming 1 (Exam PCPP-32-10x)
+PCPP assesses a candidate's ability to handle coding tasks related to advanced Python programming, OOP concepts, the use of Python Standard Library modules, designing and improving programs with GUI and network programming, and adhering to coding conventions and best practices.
+https://pythoninstitute.org/pcpp1
+
+
+
 
 
 
