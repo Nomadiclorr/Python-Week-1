@@ -818,7 +818,8 @@ PCAP assesses intermediate-level coding proficiency in Python. It evaluates the 
 https://youtu.be/U21d90zKgsg
 https://pythoninstitute.org/pcap
 
-### Professional - PCPP1™ – Certified Professional in Python Programming 1 (Exam PCPP-32-10x)
+### Professional 
+- ### PCPP1™ – Certified Professional in Python Programming 1 (Exam PCPP-32-10x)
 PCPP assesses a candidate's ability to handle coding tasks related to advanced Python programming, OOP concepts, the use of Python Standard Library modules, designing and improving programs with GUI and network programming, and adhering to coding conventions and best practices.
 https://pythoninstitute.org/pcpp1
 
