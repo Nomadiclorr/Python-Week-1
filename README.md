@@ -822,6 +822,9 @@ https://pythoninstitute.org/pcap
 PCPP assesses a candidate's ability to handle coding tasks related to advanced Python programming, OOP concepts, the use of Python Standard Library modules, designing and improving programs with GUI and network programming, and adhering to coding conventions and best practices.
 https://pythoninstitute.org/pcpp1
 
+                          - ### PCPP2™ – Certified Professional in Python Programming 2 (Exam PCPP-32-20x)
+This certification is the second part of a professional credential program called Certified Professional in Python Programming 2. It is intended for experienced Python programmers who are well-versed in software architecture principles, design patterns, database usage, multithreading and multiprocessing, and advanced aspects of network programming.
+
 
 
 
